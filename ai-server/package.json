@@ -1,0 +1,37 @@
+{
+  "type": "module",
+  "scripts": {
+    "start": "nodemon main.js",
+    "test": "jest --config jest.config.cjs",
+    "lint": "eslint --fix .",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "axios": "^1.12.1",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.26.0",
+    "@eslint/eslintrc": "^3.1.0",
+    "@eslint/js": "^8.57.1",
+    "babel-jest": "^29.7.0",
+    "eslint": "^9.14.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.12.0",
+    "jest": "^29.7.0",
+    "jest-esm-transformer": "^1.0.0",
+    "prettier": "^3.3.3",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.2.5"
+  },
+  "author": {
+    "name": "Prince Maurya",
+    "email": "princemaurya8879@gmail.com"
+  }
+}
