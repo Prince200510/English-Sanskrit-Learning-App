@@ -1,3 +1,20 @@
+---
+
+## ⚠️ Deployment Note
+
+**Note:** The translation models `modelv2` and `modelv3` are not deployed on Render or Vercel due to large storage requirements (over 6GB). To use the full functionality, please download the models from the following Google Drive link and place them in the `ai-server` directory:
+
+👉 [Download modelv2 and modelv3 from Google Drive](YOUR_GOOGLE_DRIVE_LINK_HERE)
+
+After downloading, extract the folders so that you have:
+
+```
+ai-server/
+  modelv2/
+  modelv3/
+```
+
+This will enable all translation features locally.
 # English-Sanskrit-Hindi Learning App
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/Prince200510/English-Sanskrit-Learning-App)

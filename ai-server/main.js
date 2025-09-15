@@ -16,5 +16,9 @@ app.get('/', (req, res) => {
 app.use('/', routes);
 
 app.listen(8000, () => {
-  console.log('Server started on port http://localhost:8000');
+  console.log('Server started!');
+  console.log('Backend URLs:');
+  console.log('  Local:   http://localhost:8000');
+  console.log('  Render:  https://English-Sanskrit-Learning-App.onrender.com');
+  console.log('  Vercel (frontend): https://English-Sanskrit-Learning-App.vercel.app');
 });

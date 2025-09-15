@@ -1,7 +1,13 @@
 import axios from 'axios';
 import type { TranslationRequest, FlashcardResponse, GrammarResponse } from '../types/api';
 
-const API_BASE_URL = 'http://localhost:8000';
+// Support both production and development URLs
+export const API_BASE_URL =
+  typeof window !== 'undefined' && window.location.hostname.endsWith('vercel.app')
+    ? 'https://English-Sanskrit-Learning-App.onrender.com'
+    : process.env.NODE_ENV === 'production'
+      ? 'https://English-Sanskrit-Learning-App.onrender.com'
+      : 'http://localhost:8000';
 
 export const translateText = async (data: TranslationRequest) => {
   const response = await axios.post(`${API_BASE_URL}/translate/file`, data);

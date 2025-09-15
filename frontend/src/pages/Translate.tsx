@@ -12,6 +12,17 @@ interface TranslationMethod {
 }
 
 export default function Translate() {
+  // Deployment note for large models
+  const modelNote = (
+    <div className="mb-6 p-4 bg-yellow-50 border-l-4 border-yellow-400 text-yellow-800 rounded">
+      <strong>Note:</strong> The advanced translation models <b>modelv2</b> and <b>modelv3</b> are <b>not deployed</b> on Render/Vercel due to large storage requirements (&gt;6GB).<br />
+      To use all translation features locally, please download the models from:
+      <br />
+      <a href="https://drive.google.com/drive/folders/1PkEdWhDoqspLx22pZzImwiiQuGCM3QoU?usp=sharing" target="_blank" rel="noopener noreferrer" className="underline text-blue-700">Download modelv2 and modelv3 (Google Drive)</a>
+      <br />
+      After downloading, place the <code>modelv2</code> and <code>modelv3</code> folders inside <code>ai-server/</code>.
+    </div>
+  );
   const [fromLang, setFromLang] = useState('English');
   const [toLang, setToLang] = useState('Sanskrit');
   const [inputText, setInputText] = useState('');
@@ -108,6 +119,7 @@ export default function Translate() {
             <p className="text-xl text-blue-100 max-w-2xl mx-auto">
               Bridge languages with AI-powered translation. From English to Sanskrit and beyond.
             </p>
+            {modelNote}
           </div>
         </div>
       </div>
