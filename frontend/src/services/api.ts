@@ -4,9 +4,9 @@ import type { TranslationRequest, FlashcardResponse, GrammarResponse } from '../
 // Support both production and development URLs
 export const API_BASE_URL =
   typeof window !== 'undefined' && window.location.hostname.endsWith('vercel.app')
-    ? 'https://English-Sanskrit-Learning-App.onrender.com'
+    ? 'https://english-sanskrit-learning-app.onrender.com'
     : process.env.NODE_ENV === 'production'
-      ? 'https://English-Sanskrit-Learning-App.onrender.com'
+      ? 'https://english-sanskrit-learning-app.onrender.com'
       : 'http://localhost:8000';
 
 export const translateText = async (data: TranslationRequest) => {

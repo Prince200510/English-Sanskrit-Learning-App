@@ -19,6 +19,6 @@ app.listen(8000, () => {
   console.log('Server started!');
   console.log('Backend URLs:');
   console.log('  Local:   http://localhost:8000');
-  console.log('  Render:  https://English-Sanskrit-Learning-App.onrender.com');
-  console.log('  Vercel (frontend): https://English-Sanskrit-Learning-App.vercel.app');
+  console.log('  Render:  https://english-sanskrit-learning-app.onrender.com');
+  console.log('  Vercel (frontend): https://english-sanskrit-learning-app.vercel.app');
 });
